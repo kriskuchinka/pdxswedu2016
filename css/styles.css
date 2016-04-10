@@ -73,7 +73,7 @@ ul li:last-child, li:nth-last-child(2) {
   left: 5%;
   right: 5%;
   background-color: gray;
-  border-radius: 5%;
+  /*border-radius: 5%;*/
   box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, .5);
 }
 
@@ -223,17 +223,37 @@ ul li:last-child, li:nth-last-child(2) {
 
 /*------ Begin Modal Window Styling for Interest Form ------*/
 #modal1, #modal2, #modal3, #modal4, #modal5 {
+  text-align: center;
   display: none;
-  width: 90%;
+  width: 57%;
   position: fixed;
   z-index: 10;
   min-height: 500px;
-  top: 130px;
-  left: 5%;
+  top: 155px;
+  left: 3%;
   right: 5%;
-  background-color: gray;
-  border-radius: 5%;
-  box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, .5);
+  background-color: #DAEBF1;
+  /* border-radius: 32px; */
+  box-shadow: -1px 5px 24px 0 rgba(52, 138, 167, 0.63);
+}
+
+h1 {
+	font-size: 51px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #aeb64d;
+    margin-bottom: 10px;
+}
+
+.nextAndBack, button {
+	background-color: white;
+    border: solid 1px #cccccc;
+    color: #b6c555;
+    font-family: 'Short Stack', cursive;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #F7C574;
+  font-family: 'Short Stack', cursive;
 }
 
 .exit {
@@ -284,6 +304,35 @@ ul li:last-child, li:nth-last-child(2) {
 	width:30%;
 	display: inline-block;
 }
+
+input {
+	width: 400px;
+    height: 88px;
+    font-size: 38px;
+    font-family: 'Short Stack', cursive;
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+	width: 400px;
+    height: 88px;
+    font-size: 19px;
+    font-family: 'Short Stack', cursive;
+    color: #F7C574;
+}
+
+optgroup {
+	font-family: 'Short Stack', cursive;
+    color: #F7C574;
+}
+
+
+/*#favorite-books, #book-fun, #favorite-movies-television, #favorite-likes {*/
+	/*height: 200px;*/
+/*}*/
+
 
 
 /*------ End of Modal Window Styling for Interest Form ------*/
