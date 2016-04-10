@@ -106,11 +106,13 @@ ul li:last-child, li:nth-last-child(2) {
 	cursor: pointer;	
 }
 
-#praise {
-	text-align: center;
-	color: white;
-	font-size: 30px;
-}
+
+
+/*#praise {*/
+	/*text-align: center;*/
+	/*color: white;*/
+	/*font-size: 30px;*/
+/*}*/
 
 
 /* Styles all a tags to their default styles */
@@ -237,14 +239,34 @@ ul li:last-child, li:nth-last-child(2) {
   box-shadow: -1px 5px 24px 0 rgba(52, 138, 167, 0.63);
 }
 
-h1 {
+h1, h3, h2 {
 	font-size: 51px;
     font-family: 'Roboto Condensed', sans-serif;
     color: #aeb64d;
     margin-bottom: 10px;
 }
 
-.nextAndBack, button {
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.125em;
+  border           : 0.0625em solid rgb(115,153,77);
+  border-radius    : 0.125em;
+  background       : rgb(153,204,102);
+  background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
+}
+
+.h2small {
+    font-size: 20px;
+}
+
+
+.nextAndBack {
 	background-color: white;
     border: solid 1px #cccccc;
     color: #b6c555;
@@ -260,7 +282,7 @@ h1 {
 	position: absolute;
 	top: 5%;
 	left: 95%;
-	font: 18px;
+	font-size: 18px;
 	color: white;
 	cursor: pointer;
 }
@@ -285,11 +307,11 @@ h1 {
 	cursor: pointer;	
 }
 
-#praise {
-	text-align: center;
-	color: white;
-	font-size: 30px;
-}
+/*#praise {*/
+	/*text-align: center;*/
+	/*color: white;*/
+	/*font-size: 30px;*/
+/*}*/
 
 #suggestions {
 	padding: 10%;
@@ -316,7 +338,7 @@ select {
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
-	width: 400px;
+	width: 500px;
     height: 88px;
     font-size: 19px;
     font-family: 'Short Stack', cursive;
@@ -327,6 +349,24 @@ optgroup {
 	font-family: 'Short Stack', cursive;
     color: #F7C574;
 }
+
+.modal5Options{
+	height: 13px;
+    width: 10px;
+}
+
+.needMore {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.questionBox {
+    margin-right: 149px;
+    margin-left: 182px;
+}
+/*.largerIntrests {*/
+	/*width: 450px;*/
+/*}*/
 
 
 /*#favorite-books, #book-fun, #favorite-movies-television, #favorite-likes {*/

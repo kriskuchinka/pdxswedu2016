@@ -91,16 +91,16 @@
 			<span class="exit"><p>X</p></span>
 			<h1>Help us find what interests you...</h1>
 			<form action="/new_user" method="POST">
-				<p><select name="movies-television" id="favorite-movies-television">
+				<p><select name="movies-television" id="favorite-movies-television" class="largerIntrests">
 					<optgroup>
-						<option value="favorite-movie-tv">---Choose your Favorite Movie or TV Program---</option>
+						<option value="favorite-movie-tv">---Choose your Favorite Movie or TV show---</option>
 						<option name="movie-tv" value="frozen">Frozen</option>
 						<option name="movie-tv" value="despicable-me">Despicable Me</option>
 						<option name="movie-tv" value="phineas-ferb">Phineas and Ferb</option>
 						<option name="movie-tv" value="doctor-who">Doctor Who</option>
 					<optgroup>
 				</select></p>
-				<p><select name="books" id="favorite-books">
+				<p><select name="books" id="favorite-books" class="largerIntrests">
 					<optgroup>
 						<option value="favorite-book">---Choose your Favorite Type of Book---</option>
 						<option name="books" value="fantasy">Fantasy</option>
@@ -123,20 +123,19 @@
 
 		<div id="modal5">
 			<span class="exit"><p>X</p></span>			
-			<h1 id="praise">Congratulations!</h1>
-			<h3 id="praise">We just need a little more input from you...</h3>
-			<div id="suggestions">
-				<button>Get Book Suggestions</button>
-			</div>			
+			<h1 id="praise">Awesome!</h1>
+			<h3 id="praise" class="needMore">We just need a little more input from you...</h3>
 			<div id="review">
-				<h2>Tell us what you think.</h2>
+				<!--<h2 class="h2small">Tell us what you think.</h2>-->
 				<form action="/main/newbookreview/" method="POST">
 					<p>Would you recommend this book to a friend?</p>
-					<p><input type="radio" name="recommendation-yes">Yes
-					<input type="radio" name="recommendation-no">No</p>
-					<p>What was your favorite part of the book?<input type="text"></p>
-					<p>Which character would you like to meet most in real life?<input type="text"></p>
-					<p>If you could give the book another title, what would it be?<input type="text"></p>
+					<p>
+						<input type="radio" name="recommendation-yes" class="modal5Options">Yes
+						<input type="radio" name="recommendation-no" class="modal5Options">No
+					</p>
+					<p  class="questionBox">What was your favorite part of the book?<input type="text"></p>
+					<p class="questionBox">Which character would you like to meet most in real life?<input type="text"></p>
+					<p class="questionBox">If you could give the book another title, what would it be?<input type="text"></p>
 					<p><select value="book-fun" name="book-fun">
 						<optgroup>
 							<option name="book-fun" id="rate-fun">---How fun was this book (1-5)?---</option>
@@ -149,6 +148,9 @@
 					</select></p>
 					<button id="opinion">Share Your Opinion</button>
 				</form>
+			</div>
+			<div id="suggestions">
+				<button>Get Book Suggestions</button>
 			</div>
 		</div> <!-- end of modal5 -->
 	</section> <!-- end of modal-display -->
