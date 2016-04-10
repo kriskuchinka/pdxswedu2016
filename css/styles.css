@@ -10,3 +10,55 @@ body {
 	background-color: green;
 }
 
+/*------ Begin Modal Window Styling for Interest Form ------*/
+#modal1, #modal2, #modal3 {
+  display: none;
+  width: 90%;
+  position: fixed;
+  z-index: 10;
+  min-height: 300px;
+  top: 130px;
+  left: 5%;
+  right: 5%;
+  background-color: gray;
+  border-radius: 5%;
+  box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, .5);
+}
+
+.exit {
+	position: absolute;
+	top: 5%;
+	left: 95%;
+	font: 18px;
+	color: white;
+	cursor: pointer;
+}
+
+#next1, #next2, #submit {
+	position: absolute;
+	bottom: 0;
+	left: 85%;
+	padding: 2%;
+	margin: 2%;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#back1, #back2 {
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+	padding: 2%;
+	margin: 2%;
+	font-size: 20px;
+	cursor: pointer;	
+}
+
+#praise {
+	display: none;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+/*------ End of Modal Window Styling for Interest Form ------*/

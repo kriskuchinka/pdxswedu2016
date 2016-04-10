@@ -3,9 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Read and Share</title>
+	<!-- Link to external style sheet -->
 	<link rel="stylesheet" href="css/styles.css">
+	<!-- Link to Google CDN for jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!-- Link to External Style Sheet -->
+	<script src="js/script.js"></script>
 </head>
 <body>
-	
+	<h1>Hello World!</h1>
+	<button id="sign-in">Sign In!</button>
+	<button id="create-account">Create Account!</button>
+	<section class="modal-display">
+		<div id="modal1" class="modal-display">
+			<span class="exit"><p>X</p></span>
+			<h1>Tell us about yourself</h1>
+			<select text="sports" id="sports-options">
+				<option value="basketball">Basketball</option>
+				<option value="baseball">Baseball</option>
+				<option value="football">Football</option>
+				<option value="soccer">Soccer</option>
+				<option value="tennis">Tennis</option>
+				<option value="volleyball">Volleyball</option>
+			</select> <!-- end of sports option wheel -->
+			<button id="next1">Next</button>
+		</div> <!-- end of modal1 -->
+
+		<div id="modal2" class="modal-display">
+			<span class="exit"><p>X</p></span>
+			<h1>Help us find what interests you...</h1>
+			<button id="back1">Back</button>
+			<button id="next2">Next</button>
+		</div> <!-- end of modal2 -->
+		<div id="modal3" class="modal-display">
+			<span class="exit"><p>X</p></span>
+			<h1>Help us find what interests you...</h1>
+			<h1 id="praise">You did it!!!</h1>
+			<button id="back2">Back</button>
+			<button id="submit">Submit</button>
+		</div> <!-- end of modal3 -->
+	</section> <!-- end of modal-display -->
 </body>
 </html>
