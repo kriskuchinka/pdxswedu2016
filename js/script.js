@@ -8,6 +8,11 @@ $(document).ready(function() {
     	$('#modal1').fadeIn(250);
     });
 
+    $('.create-account').click(function() {
+    console.log("You clicked to create an account.");
+    $('#modal1').fadeIn(250);
+    });
+
 // Click events for modal next buttons
     $('#next1').click(function(){
         event.preventDefault();
