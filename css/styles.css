@@ -231,7 +231,7 @@ ul li:last-child, li:nth-last-child(2) {
   position: fixed;
   z-index: 10;
   min-height: 500px;
-  top: 155px;
+  top: 85px;;
   left: 3%;
   right: 5%;
   background-color: #DAEBF1;
