@@ -1,3 +1,8 @@
+/* FONT IMPORTS */
+@import url(https://fonts.googleapis.com/css?family=Short+Stack);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+/* END OF FONT IMPORTS */
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -17,12 +22,14 @@ ul {
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-	background-color: #f0f0ee;
+	background-color: #fff;
 	box-shadow: 3px 3px #eeaf49;
 }
 /* Align Book Dragon to the left */
 li {
 	float: left;
+	font-family: 'Short Stack', cursive;
+	font-size: 1.5em;
 }
 
 /* Styles all a tags to their default styles */
@@ -48,6 +55,7 @@ li a:hover:not(.active){
 /* Align last button (search) to the right*/
 ul li:last-child, li:nth-last-child(2) {
 	float: right;
+	font-family:'Roboto Condensed', sans-serif;
 }
 
 
