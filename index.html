@@ -11,7 +11,16 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<h1>Hello World!</h1>
+	<section>
+		<ul>
+			<li><a href="https://www.twitter.com">Book Dragon</a></li>
+			<li><a href="https://www.twitter.com">Sign In</a></li>
+			<li><a href="https://www.twitter.com">Create Account</a></li>
+		</ul>
+	</section>
+	<div class="image">
+		<img src=""
+	</div>
 	<button id="sign-in">Sign In!</button>
 	<button id="create-account">Create Account!</button>
 	<section class="modal-display">
@@ -111,10 +120,25 @@
 			</div>			
 			<div id="review">
 				<h2>Tell us what you think.</h2>
-				<textarea id="review-input"></textarea>
+				<form action="/main/newbookreview/" method="POST">
+					<p>Would you recommend this book to a friend?</p>
+					<p><input type="radio" name="recommendation-yes">Yes
+					<input type="radio" name="recommendation-no">No</p>
+					<p>What was your favorite part of the book?<input type="text"></p>
+					<p>Which character would you like to meet most in real life?<input type="text"></p>
+					<p>If you could give the book another title, what would it be?<input type="text"></p>
+					<p><select value="book-fun" name="book-fun">
+						<option name="book-fun" id="rate-fun">---How fun was this book (1-5)?---</option>
+						<option name="book-fun" id="rate-fun1">1</option>
+						<option name="book-fun" id="rate-fun2">2</option>
+						<option name="book-fun" id="rate-fun3">3</option>
+						<option name="book-fun" id="rate-fun4">4</option>
+						<option name="book-fun" id="rate-fun5">5</option>
+					</select></p>
+					<p><button>Share Your Opinion</button></p>
+				</form>
 			</div>
 		</div> <!-- end of modal5 -->
-		<div id="successful-creation"></div> <!-- end of successful-creation -->
 	</section> <!-- end of modal-display -->
 </body>
 </html>

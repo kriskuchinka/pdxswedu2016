@@ -7,8 +7,50 @@
 body {
 	width: 100%;
 	margin: 0;
-	background-color: green;
+	background-color: #daebf1;
 }
+/*------ Begin Navigation Styling for Site ------*/
+
+/* Basic Styles for nav bar */
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #f0f0ee;
+	box-shadow: 3px 3px #eeaf49;
+}
+/* Align Book Dragon to the left */
+li {
+	float: left;
+}
+
+/* Styles all a tags to their default styles */
+li a {
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* When NOT clicked */
+li a:hover:not(.active){
+	color: #2e2925;
+	background-color: #95b401;
+}
+
+/* When a nav is the current tab */
+.active {
+	background-color: #95b401;
+}
+
+/* Align last button (search) to the right*/
+ul li:last-child, li:nth-last-child(2) {
+	float: right;
+}
+
+
 
 /*------ Begin Modal Window Styling for Interest Form ------*/
 #modal1, #modal2, #modal3, #modal4, #modal5 {
@@ -16,7 +58,7 @@ body {
   width: 90%;
   position: fixed;
   z-index: 10;
-  min-height: 300px;
+  min-height: 500px;
   top: 130px;
   left: 5%;
   right: 5%;
@@ -74,3 +116,4 @@ body {
 	display: inline-block;
 }
 /*------ End of Modal Window Styling for Interest Form ------*/
+
