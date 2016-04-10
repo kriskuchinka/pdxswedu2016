@@ -37,7 +37,7 @@ li {
 }
 
 /* Styles all a tags to their default styles */
-li a, .create-account {
+li a{
 	display: block;
 	color: #333746;
 	text-align: center;
@@ -45,19 +45,36 @@ li a, .create-account {
 	text-decoration: none;
 }
 
-
-/* When NOT clicked */
-li a:hover, .create-account{
+li a:hover {
 	/*color: #2e2925;*/
 	color: #d34a5c;
 	/*background-color: #95b401;*/
 }
 
-/* Align last button (search) to the right*/
-ul li:last-child, li:nth-last-child(2), .create-account {
+/* Align last buttons to the right*/
+li:nth-child(2), li:last-child {
 	float: right;
 	font-family:'Roboto Condensed', sans-serif;
 }
+
+/* Connect with my teacher button */
+.connect-teach, .friend-read {
+	background-color: #eeaf49;
+	border: none;
+	color: #fff;
+	text-align: center;
+	font-size: 1em;
+	margin: 10px 15px 5px 10px;
+	box-shadow: 5px 5px #d34a5c;
+	border-radius: 4px;
+	font-family:'Roboto Condensed', sans-serif;
+}
+
+.connect-teach:hover, .friend-read:hover {
+	color: #d34a5c;
+}
+
+
 /*------------ End Navigation Styling for Site ------------*/
 
 /*------ Begin Modal Window Styling for Interest Form ------*/
@@ -229,7 +246,7 @@ ul li:last-child, li:nth-last-child(2), .create-account {
 .footer {
 	position: absolute;
 	right: 0px;
-	bottom: 0px;
+	bottom: -7px;
 	left: 0px;
 	padding: 1rem;
 	background-color: #80b46d;
