@@ -361,7 +361,7 @@ optgroup {
 }
 
 .questionBox {
-    margin-right: 149px;
+    margin-right: 170px;
     margin-left: 182px;
 }
 
@@ -371,9 +371,12 @@ optgroup {
 }
 
 .modal5TextInput {
-    height: 20px;
+    height: 57px;
 }
 
+.lastDropDown {
+    height: 40px;
+}
 /*.largerIntrests {*/
 	/*width: 450px;*/
 /*}*/
