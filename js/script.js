@@ -30,7 +30,7 @@ $(document).ready(function() {
     $('#submit').click(function(){
         event.preventDefault();
         $('#modal4').fadeOut(250);
-        $('#successful-creation').html("<h1 id='praise'>Congratulations!</h1>");
+        $('#modal5').fadeIn(250);
     });    
 
 

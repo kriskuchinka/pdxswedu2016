@@ -11,7 +11,7 @@ body {
 }
 
 /*------ Begin Modal Window Styling for Interest Form ------*/
-#modal1, #modal2, #modal3, #modal4 {
+#modal1, #modal2, #modal3, #modal4, #modal5 {
   display: none;
   width: 90%;
   position: fixed;
@@ -60,4 +60,17 @@ body {
 	font-size: 30px;
 }
 
+#suggestions {
+	padding: 10%;
+	float: left;
+	width:50%;
+	display: inline-block;
+}
+
+#reviews {
+	padding: 10%;
+	float: right;
+	width:30%;
+	display: inline-block;
+}
 /*------ End of Modal Window Styling for Interest Form ------*/
