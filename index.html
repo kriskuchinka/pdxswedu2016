@@ -18,71 +18,91 @@
 		<div id="modal1" class="modal-display">
 			<span class="exit"><p>X</p></span>
 			<h1>Tell us about yourself</h1>
-			<p><select name="sports" id="sports-options">
-				<option value="favorite-sport">---Choose your Favorite Sport ---</option>
-				<option value="basketball">Basketball</option>
-				<option value="baseball">Baseball</option>
-				<option value="football">Football</option>
-				<option value="soccer">Soccer</option>
-				<option value="tennis">Tennis</option>
-				<option value="volleyball">Volleyball</option>
-			</select></p <!-- end of sports option wheel -->
-			<p><select name="arts" id="favorite-arts">
-				<option value="favorite-art">---Choose your Favorite Art Medium---</option>
-				<option value="drawing">Drawing</option>
-				<option value="painting">Painting</option>
-				<option value="photography">Photography</option>
-				<option value="crafts">Crafts</option>
-			</select></p> <!-- end of arts option wheel -->
+			<form action="new_user" method="POST">
+				<p><input type="text" placeholder="Username"></p>
+				<p><input type="number" placeholder="Age"></p>
+				<p><input type="password" placeholder="Choose Password"></p>
+				<p><input type="password" placeholder="Re-Type Password"></p>
+			</form>
 			<button id="next1">Next</button>
 		</div> <!-- end of modal1 -->
 
 		<div id="modal2" class="modal-display">
 			<span class="exit"><p>X</p></span>
-			<h1>Help us find what interests you...</h1>
-			<p><select name="likes" id="favorite-likes">
-				<option value="favorite-like">---Choose your Favorite Like---</option>
-				<option value="legos">Legos</option>
-				<option value="programming">Programming</option>
-				<option value="dolls">Dolls</option>
-				<option value="camping">Camping</option>
-			</select></p> <!-- end of favorite-likes -->
-			<p><select name="video-games" id="video-games">
-				<option value="favorite-video-game">---Choose your Favorite Video Game----</option>
-				<option value="minecraft">Minecraft</option>
-				<option value="mario">Mario</option>
-			</select></p>
+			<h1>Tell us about yourself</h1>
+			<form action="sports_art" method="POST">
+				<p><select name="sports" id="sports-options">
+					<option value="favorite-sport">---Choose your Favorite Sport ---</option>
+					<option value="basketball">Basketball</option>
+					<option value="baseball">Baseball</option>
+					<option value="football">Football</option>
+					<option value="soccer">Soccer</option>
+					<option value="tennis">Tennis</option>
+					<option value="volleyball">Volleyball</option>
+				</select></p <!-- end of sports option wheel -->
+				<p><select name="arts" id="favorite-arts">
+					<option value="favorite-art">---Choose your Favorite Art Medium---</option>
+					<option value="drawing">Drawing</option>
+					<option value="painting">Painting</option>
+					<option value="photography">Photography</option>
+					<option value="crafts">Crafts</option>
+				</select></p> <!-- end of arts option wheel -->
+			</form>
 			<button id="back1">Back</button>
 			<button id="next2">Next</button>
 		</div> <!-- end of modal2 -->
+
 		<div id="modal3" class="modal-display">
 			<span class="exit"><p>X</p></span>
 			<h1>Help us find what interests you...</h1>
-			<h1 id="praise">You did it!!!</h1>
-			<p><select name="movies-television" id="favorite-movies-television">
-				<option value="favorite-movie-tv">---Choose your Favorite Movie or TV Program---</option>
-				<option value="frozen">Frozen</option>
-				<option value="despicable-me">Despicable Me</option>
-				<option value="phineas-Ferb">Phineas and Ferb</option>
-				<option value="doctor-who">Doctor Who</option>
-			</select></p>
-			<p><select name="books" id="favorite-books">
-				<option value="favorite-book">---Choose your Favorite Type of Book---</option>
-				<option value="fantasy">Fantasy</option>
-				<option value="science-fiction">Science Fiction</option>
-				<option value="mystery">Mystery</option>
-				<option value="comics">Comics</option>
-				<option value="adventure">Adventure</option>
-				<option value="sports">Sports</option>
-				<option value="nature">Nature</option>
-				<option value="space">Space</option>
-				<option value="insects">Insects</option>
-				<option value="chemistry">Chemistry</option>
-				<option value="science-experiments">Science Experiments</option>
-			</select></p>
+			<form action="likes_games" method="POST">
+				<p><select name="likes" id="favorite-likes">
+					<option value="favorite-like">---Choose your Favorite Like---</option>
+					<option value="legos">Legos</option>
+					<option value="programming">Programming</option>
+					<option value="dolls">Dolls</option>
+					<option value="camping">Camping</option>
+				</select></p> <!-- end of favorite-likes -->
+				<p><select name="video-games" id="video-games">
+					<option value="favorite-video-game">---Choose your Favorite Video Game----</option>
+					<option value="minecraft">Minecraft</option>
+					<option value="mario">Mario</option>
+				</select></p>
+			</form>
 			<button id="back2">Back</button>
-			<button id="submit">Submit</button>
+			<button id="next3">Next</button>
 		</div> <!-- end of modal3 -->
+
+		<div id="modal4" class="modal-display">
+			<span class="exit"><p>X</p></span>
+			<h1>Help us find what interests you...</h1>
+			<form action="new" method="POST">
+				<p><select name="movies-television" id="favorite-movies-television">
+					<option value="favorite-movie-tv">---Choose your Favorite Movie or TV Program---</option>
+					<option value="frozen">Frozen</option>
+					<option value="despicable-me">Despicable Me</option>
+					<option value="phineas-Ferb">Phineas and Ferb</option>
+					<option value="doctor-who">Doctor Who</option>
+				</select></p>
+				<p><select name="books" id="favorite-books">
+					<option value="favorite-book">---Choose your Favorite Type of Book---</option>
+					<option value="fantasy">Fantasy</option>
+					<option value="science-fiction">Science Fiction</option>
+					<option value="mystery">Mystery</option>
+					<option value="comics">Comics</option>
+					<option value="adventure">Adventure</option>
+					<option value="sports">Sports</option>
+					<option value="nature">Nature</option>
+					<option value="space">Space</option>
+					<option value="insects">Insects</option>
+					<option value="chemistry">Chemistry</option>
+					<option value="science-experiments">Science Experiments</option>
+				</select></p>
+			</form>
+			<button id="back3">Back</button>
+			<button id="submit">Submit</button>
+		</div> <!-- end of modal4 -->
+		<div id="successful-creation"></div> <!-- end of successful-creation -->
 	</section> <!-- end of modal-display -->
 </body>
 </html>

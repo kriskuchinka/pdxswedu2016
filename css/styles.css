@@ -11,7 +11,7 @@ body {
 }
 
 /*------ Begin Modal Window Styling for Interest Form ------*/
-#modal1, #modal2, #modal3 {
+#modal1, #modal2, #modal3, #modal4 {
   display: none;
   width: 90%;
   position: fixed;
@@ -34,7 +34,7 @@ body {
 	cursor: pointer;
 }
 
-#next1, #next2, #submit {
+#next1, #next2, #next3, #submit {
 	position: absolute;
 	bottom: 0;
 	left: 85%;
@@ -44,7 +44,7 @@ body {
 	cursor: pointer;
 }
 
-#back1, #back2 {
+#back1, #back2, #back3 {
 	position: absolute;
 	bottom: 0;
 	left: 5%;
@@ -55,7 +55,6 @@ body {
 }
 
 #praise {
-	display: none;
 	text-align: center;
 	color: white;
 	font-size: 30px;

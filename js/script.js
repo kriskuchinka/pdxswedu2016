@@ -10,19 +10,29 @@ $(document).ready(function() {
 
 // Click events for modal next buttons
     $('#next1').click(function(){
+        event.preventDefault();
     	$('#modal1').fadeOut(250);
     	$('#modal2').fadeIn(250);
     });
 
     $('#next2').click(function(){
+        event.preventDefault();
     	$('#modal2').fadeOut(250);
     	$('#modal3').fadeIn(250);
     });
 
-    $('#submit').click(function(){
-    	$('#praise').fadeIn(200);
+    $('#next3').click(function(){
+        event.preventDefault();
+        $('#modal3').fadeOut(250);
+        $('#modal4').fadeIn(250);
+    });
 
+    $('#submit').click(function(){
+        event.preventDefault();
+        $('#modal4').fadeOut(250);
+        $('#successful-creation').html("<h1 id='praise'>Congratulations!</h1>");
     });    
+
 
 // Click events for modal back buttons
 	$('#back1').click(function(){
@@ -35,11 +45,17 @@ $(document).ready(function() {
 		$('#modal2').fadeIn(250);
 	});
 
+    $('#back3').click(function(){
+        $('#modal4').fadeOut(250);
+        $('#modal3').fadeIn(250);
+    });
+
 // Allow user to exit from modal window
     $('.exit').click(function() {
     	$('#modal1').fadeOut(250);
     	$('#modal2').fadeOut(250);
     	$('#modal3').fadeOut(250);
+        $('#modal4').fadeOut(250);
     });
     
 });
