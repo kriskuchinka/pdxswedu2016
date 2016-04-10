@@ -58,7 +58,10 @@ $(document).ready(function() {
         $('#modal4').fadeOut(250);
         $('#modal5').fadeOut(250);
     });
-    
+// Upon submission of review, reveal desktop image art
+    $('.opinion').click(function(){
+        $('modal5').fadeOut(250);
+    });
 });
 
 

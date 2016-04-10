@@ -15,8 +15,6 @@ body {
 	width: 100%;
 	margin: 0;
 	background-color: #daebf1;
-<<<<<<< HEAD
-=======
 }
 /*------ Begin Navigation Styling for Site ------*/
 
@@ -151,30 +149,34 @@ ul li:last-child, li:nth-last-child(2) {
 	vertical-align: bottom;
 }
 
-#sign-in {
+#sign-in, #create-account {
+	/* Box styling */
 	height: 8em;
-	position: relative;
-	margin: 0;
-	background: #eeaf49;
 	position: absolute;
-	top: 30%;
-	left: 50%;
+	margin: 0;
+	border-radius: 4px;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
+
+	/* Colors */
+	background: #eeaf49;
+	box-shadow: 5px 5px #d34a5c;
+	color: #fff;
+	font-size: 1em;
+	
+	
 }
 
 #create-account {
-	height: 8em;
-	position: relative;
-	margin: 0;
-	background: #eeaf49;
-	position: absolute;
-	top: 30%;
+	top: 60%;
 	left: 20%;
-	margin-right: -80%;
-	transform: translate(-50%, -50%);
->>>>>>> f6cabba084facc6261becef63fdc91857ba83c2c
 }
+
+#sign-in {
+	top: 60%;
+	left: 30%;
+}
+
 /*------ Begin Navigation Styling for Site ------*/
 
 /* Basic Styles for nav bar */
@@ -183,13 +185,14 @@ ul {
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-	background-color: #f0f0ee;
+	background-color: #fff;
 	box-shadow: 3px 3px #eeaf49;
 }
+
 /* Align Book Dragon to the left */
-li {
+/*li {
 	float: left;
-}
+}*/
 
 /* Styles all a tags to their default styles */
 li a {
@@ -203,12 +206,12 @@ li a {
 /* When NOT clicked */
 li a:hover:not(.active){
 	color: #2e2925;
-	background-color: #95b401;
+	background-color: #b6c555;
 }
 
 /* When a nav is the current tab */
 .active {
-	background-color: #95b401;
+	background-color: #b6c555;
 }
 
 /* Align last button (search) to the right*/
@@ -281,5 +284,7 @@ ul li:last-child, li:nth-last-child(2) {
 	width:30%;
 	display: inline-block;
 }
+
+
 /*------ End of Modal Window Styling for Interest Form ------*/
 
