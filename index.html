@@ -127,24 +127,25 @@
 			<h3 id="praise" class="needMore">We just need a little more input from you...</h3>
 			<div id="review">
 				<!--<h2 class="h2small">Tell us what you think.</h2>-->
-				<form action="/main/newbookreview/" method="POST">
+				<form action="/main/newbookreview/" method="POST" class="modal5Text">
 					<p>Would you recommend this book to a friend?</p>
 					<p>
 						<input type="radio" name="recommendation-yes" class="modal5Options">Yes
 						<input type="radio" name="recommendation-no" class="modal5Options">No
 					</p>
-					<p  class="questionBox">What was your favorite part of the book?<input type="text"></p>
-					<p class="questionBox">Which character would you like to meet most in real life?<input type="text"></p>
-					<p class="questionBox">If you could give the book another title, what would it be?<input type="text"></p>
+					<p  class="questionBox">What was your favorite part of the book?
+						<input type="text" class="modal5TextInput"></p>
+					<p class="questionBox">Which character would you like to meet most in real life?
+						<input type="text" class="modal5TextInput"></p>
+					<p class="questionBox">If you could give the book another title, what would it be?
+						<input type="text" class="modal5TextInput"></p>
 					<p><select value="book-fun" name="book-fun">
-						<optgroup>
 							<option name="book-fun" id="rate-fun">---How fun was this book (1-5)?---</option>
 							<option name="book-fun" id="rate-fun1">1</option>
 							<option name="book-fun" id="rate-fun2">2</option>
 							<option name="book-fun" id="rate-fun3">3</option>
 							<option name="book-fun" id="rate-fun4">4</option>
 							<option name="book-fun" id="rate-fun5">5</option>
-						</optgroup>
 					</select></p>
 					<button id="opinion">Share Your Opinion</button>
 				</form>

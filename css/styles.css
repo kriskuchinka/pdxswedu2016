@@ -364,6 +364,16 @@ optgroup {
     margin-right: 149px;
     margin-left: 182px;
 }
+
+.modal5Text {
+    color: #b6c555;
+    font-family: 'Short Stack', cursive;
+}
+
+.modal5TextInput {
+    height: 20px;
+}
+
 /*.largerIntrests {*/
 	/*width: 450px;*/
 /*}*/
