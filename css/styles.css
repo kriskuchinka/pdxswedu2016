@@ -313,12 +313,12 @@ input[type=radio]:not(old):checked + label > span > span{
 	/*font-size: 30px;*/
 /*}*/
 
-#suggestions {
-	padding: 10%;
-	float: left;
-	width:50%;
-	display: inline-block;
-}
+/*#suggestions {*/
+	/*padding: 10%;*/
+	/*float: left;*/
+	/*width:50%;*/
+	/*display: inline-block;*/
+/*}*/
 
 #reviews {
 	padding: 10%;
