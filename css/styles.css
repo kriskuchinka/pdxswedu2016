@@ -54,10 +54,10 @@ li a:hover, .create-account{
 }
 
 /* Align last button (search) to the right*/
-ul li:last-child, li:nth-last-child(2), .create-account {
+/*ul li:last-child, li:nth-last-child(2), .create-account {
 	float: right;
 	font-family:'Roboto Condensed', sans-serif;
-}
+}*/
 /*------------ End Navigation Styling for Site ------------*/
 
 /*------ Begin Modal Window Styling for Interest Form ------*/
@@ -229,7 +229,7 @@ ul li:last-child, li:nth-last-child(2), .create-account {
 .footer {
 	position: absolute;
 	right: 0px;
-	bottom: 0px;
+	bottom: -7px;
 	left: 0px;
 	padding: 1rem;
 	background-color: #80b46d;
