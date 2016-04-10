@@ -16,6 +16,7 @@ body {
 	margin: 0;
 	background-color: #daebf1;
 }
+
 /*------ Begin Navigation Styling for Site ------*/
 
 /* Basic Styles for nav bar */
@@ -25,8 +26,9 @@ ul {
 	padding: 0px;
 	overflow: hidden;
 	background-color: #fff;
-	box-shadow: 3px 3px #eeaf49;
+	/*box-shadow: 3px 3px #d34a5c;*/
 }
+
 /* Align Book Dragon to the left */
 li {
 	float: left;
@@ -35,32 +37,46 @@ li {
 }
 
 /* Styles all a tags to their default styles */
-li a {
+li a{
 	display: block;
-	color: #000;
+	color: #333746;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
 
-/* When NOT clicked */
-li a:hover:not(.active){
-	color: #2e2925;
-	background-color: #95b401;
+li a:hover {
+	/*color: #2e2925;*/
+	color: #d34a5c;
+	/*background-color: #95b401;*/
 }
 
-/* When a nav is the current tab */
-.active {
-	background-color: #95b401;
-}
-
-/* Align last button (search) to the right*/
-ul li:last-child, li:nth-last-child(2) {
+/* Align last buttons to the right*/
+li:nth-child(2), li:last-child {
 	float: right;
 	font-family:'Roboto Condensed', sans-serif;
 }
 
+/* Connect with my teacher button */
+.connect-teach, .friend-read {
+	background-color: #eeaf49;
+	border: none;
+	color: #fff;
+	text-align: center;
+	font-size: 1em;
+	margin: 10px 15px 5px 10px;
+	box-shadow: 5px 5px #d34a5c;
+	border-radius: 4px;
+	font-family:'Roboto Condensed', sans-serif;
+}
 
+.connect-teach:hover, .friend-read:hover {
+	color: #d34a5c;
+}
+
+
+
+/*------------ End Navigation Styling for Site ------------*/
 
 /*------ Begin Modal Window Styling for Interest Form ------*/
 #modal1, #modal2, #modal3, #modal4 {
@@ -106,122 +122,54 @@ ul li:last-child, li:nth-last-child(2) {
 	cursor: pointer;	
 }
 
-
-
-/*#praise {*/
-	/*text-align: center;*/
-	/*color: white;*/
-	/*font-size: 30px;*/
-/*}*/
-
-
-/* Styles all a tags to their default styles */
-li a {
-	display: block;
-	color: #000;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-/* When NOT clicked */
-li a:hover:not(.active){
-	color: #2e2925;
-	background-color: #95b401;
-}
-
-/* When a nav is the current tab */
-.active {
-	background-color: #95b401;
-}
-
-/* Align last button (search) to the right*/
-ul li:last-child, li:nth-last-child(2) {
-	float: right;
-	font-family:'Roboto Condensed', sans-serif;
-}
-
-/*------ Image and Index Styling ------*/
+/*------------ Begin Image and Index Styling ------------ */
 .charlie {
 	float: right;
 	/*display: inline-block;*/
-	width: 80%;
-	max-height: 743px;
+	width: 75%;
+	max-height: 800px;
 	/*max-height: 730px;*/
 	vertical-align: bottom;
 }
 
 #sign-in, #create-account {
 	/* Box styling */
-	height: 8em;
+	height: 5em;
 	position: absolute;
 	margin: 0;
+	border: none;
 	border-radius: 4px;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 
+	/* Text Styles*/
+	font-size: 1.5em;
+	text-align: center;
+	font-family:'Roboto Condensed', sans-serif;
+
+
 	/* Colors */
 	background: #eeaf49;
 	box-shadow: 5px 5px #d34a5c;
-	color: #fff;
-	font-size: 1em;
-	
-	
+	color: #fff;	
+}
+
+#sign-in:hover, #create-account:hover {
+	color: #d34a5c;
 }
 
 #create-account {
+	padding: 15px 32px;
 	top: 60%;
 	left: 20%;
 }
 
 #sign-in {
+	padding: 15px 60px;
 	top: 60%;
-	left: 30%;
+	left: 35%;
 }
-
-/*------ Begin Navigation Styling for Site ------*/
-
-/* Basic Styles for nav bar */
-ul {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	overflow: hidden;
-	background-color: #fff;
-	box-shadow: 3px 3px #eeaf49;
-}
-
-/* Align Book Dragon to the left */
-/*li {
-	float: left;
-}*/
-
-/* Styles all a tags to their default styles */
-li a {
-	display: block;
-	color: #000;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-/* When NOT clicked */
-li a:hover:not(.active){
-	color: #2e2925;
-	background-color: #b6c555;
-}
-
-/* When a nav is the current tab */
-.active {
-	background-color: #b6c555;
-}
-
-/* Align last button (search) to the right*/
-ul li:last-child, li:nth-last-child(2) {
-	float: right;
-}
-
-
+/*------------ End of Image and Index Styling ------------*/
 
 /*------ Begin Modal Window Styling for Interest Form ------*/
 #modal1, #modal2, #modal3, #modal4, #modal5 {
@@ -386,7 +334,18 @@ optgroup {
 	/*height: 200px;*/
 /*}*/
 
-
-
 /*------ End of Modal Window Styling for Interest Form ------*/
 
+/*------------ Start of Styling for Footer ------------*/
+.footer {
+	position: absolute;
+	right: 0px;
+	bottom: -7px;
+	left: 0px;
+	padding: 1rem;
+	background-color: #80b46d;
+	text-align: center;
+	color: #fff;
+	font-family: 'Short Stack', cursive;
+}
+/*------------ End of Styling for Footer ------------*/
