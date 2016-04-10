@@ -1,3 +1,10 @@
+/* FONT IMPORTS */
+@import url(https://fonts.googleapis.com/css?family=Short+Stack);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+/* END OF FONT IMPORTS */
+
+/*------ Begin Basic Styling for Site ------*/
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -7,6 +14,135 @@
 body {
 	width: 100%;
 	margin: 0;
-	background-color: green;
+	background-color: #daebf1;
 }
+/*------ Begin Navigation Styling for Site ------*/
+
+/* Basic Styles for nav bar */
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 3px 3px #eeaf49;
+}
+/* Align Book Dragon to the left */
+li {
+	float: left;
+	font-family: 'Short Stack', cursive;
+	font-size: 1.5em;
+}
+
+/* Styles all a tags to their default styles */
+li a {
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* When NOT clicked */
+li a:hover:not(.active){
+	color: #2e2925;
+	background-color: #95b401;
+}
+
+/* When a nav is the current tab */
+.active {
+	background-color: #95b401;
+}
+
+/* Align last button (search) to the right*/
+ul li:last-child, li:nth-last-child(2) {
+	float: right;
+	font-family:'Roboto Condensed', sans-serif;
+}
+
+/*------ Image and Index Styling ------*/
+.charlie {
+	float: right;
+	/*display: inline-block;*/
+	width: 80%;
+	max-height: 743px;
+	/*max-height: 730px;*/
+	vertical-align: bottom;
+}
+
+#sign-in {
+	height: 8em;
+	position: relative;
+	margin: 0;
+	background: #eeaf49;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+#create-account {
+	height: 8em;
+	position: relative;
+	margin: 0;
+	background: #eeaf49;
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	margin-right: -80%;
+	transform: translate(-50%, -50%);
+}
+
+/*------ Begin Modal Window Styling for Interest Form ------*/
+#modal1, #modal2, #modal3, #modal4 {
+  display: none;
+  width: 90%;
+  position: fixed;
+  z-index: 10;
+  min-height: 300px;
+  top: 130px;
+  left: 5%;
+  right: 5%;
+  background-color: gray;
+  border-radius: 5%;
+  box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, .5);
+}
+
+.exit {
+	position: absolute;
+	top: 5%;
+	left: 95%;
+	font: 18px;
+	color: white;
+	cursor: pointer;
+}
+
+#next1, #next2, #next3, #submit {
+	position: absolute;
+	bottom: 0;
+	left: 85%;
+	padding: 2%;
+	margin: 2%;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#back1, #back2, #back3 {
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+	padding: 2%;
+	margin: 2%;
+	font-size: 20px;
+	cursor: pointer;	
+}
+
+#praise {
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+/*------ End of Modal Window Styling for Interest Form ------*/
 
